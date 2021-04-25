@@ -1,13 +1,20 @@
 $(document).ready(function () {
+    var selectedActivity = null;
+
     $('#time').focusout(() => {
         console.log(document.getElementById('time').value);
         var timeInMilliseconds = convertTimeToMilliseconds(document.getElementById('time').value);
         // Start timer only if timeInMilliseconds is not empty
         if (timeInMilliseconds) {
-            $('.flipTimer').flipTimer({
-                direction: 'down',
-                intervalTime: timeInMilliseconds
-            });
+            // Check if an activity was selected
+            if(selectedActivity) {
+                $('.flipTimer').flipTimer({
+                    direction: 'down',
+                    intervalTime: timeInMilliseconds
+                });
+            } else {
+                alert('Please selected an activity');
+            }
         }
     });
 
@@ -16,6 +23,7 @@ $(document).ready(function () {
         $(this).children('.radio-button-square').addClass('radio-selected');
         var val = $(this).attr('data-value');
         console.log(val);
+        selectedActivity = val;
     });
 });
 
