@@ -8,6 +8,7 @@
 
   <link href="styles.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="css/flipTimer.css" type="text/css">
+  <link rel="stylesheet" href="css/timePicker.css" type="text/css">
 </head>
 
 <body class="home">
@@ -24,6 +25,7 @@
     <img src="https://media2.giphy.com/media/kIRvSzrzzMyjqLI8z2/giphy.gif">
     <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6e20ba80486129.5ce2e67ba3555.gif"> -->
     <br> <br> <br> <br><br> <br>
+    <input type="time" name="time" id="time" />
     <div class="flipTimer">
       <div class="hours"></div>
       <div class="minutes"></div>
@@ -31,6 +33,7 @@
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="js/flipTimer.js"></script>
+    <script src="js/timePicker.js"></script>
     <script>
       $(document).ready(function () {
         $('.flipTimer').flipTimer({
