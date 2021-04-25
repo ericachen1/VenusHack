@@ -39,8 +39,32 @@ function convertTimeToMilliseconds(time) {
 }
 
 function displayModal() {
-    console.log(selectedActivity);
+    var bodyText = 'Hey there! You\'ve been notified!';
+    switch(selectedActivity) {
+        case 'Physical Wellness':
+            bodyText = 'Your reminder to stand up and stretch';
+        break;
+        case 'Intellectual Wellness':
+            bodyText = '';
+        break;
+        case 'Spiritual Wellness':
+            bodyText = '';
+        break;
+        case 'Emotional Wellness':
+            bodyText = '';
+        break;
+        case 'Occupational Wellness':
+            bodyText = '';
+        break;
+        case 'Social Wellness':
+            bodyText = 'Your reminder to contact loved ones!';
+        break;
+        case 'Environmental':
+            bodyText = 'Your reminder to talk a walk outside';
+        break;
+    }
     $('#timer-alert--activity').text(selectedActivity);
+    $('#timer-alert--body').text(bodyText);
     $('#timer-alert').modal();
 }
 
