@@ -46,7 +46,3 @@
 .border-1px-black {
   border: 1px solid var(--black);
 }
-
-.border-1px-blue {
-  border: 1px solid var(--blue);
-}

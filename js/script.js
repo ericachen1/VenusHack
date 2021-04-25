@@ -12,8 +12,8 @@ $(document).ready(function () {
     });
 
     $('.radio-group .js-radio').click(function(){
-        $(this).parent().find('.js-radio').children('.radio-button-square').removeClass('border-1px-blue');
-        $(this).children('.radio-button-square').addClass('border-1px-blue');
+        $(this).parent().find('.js-radio').children('.radio-button-square').removeClass('radio-selected');
+        $(this).children('.radio-button-square').addClass('radio-selected');
         var val = $(this).attr('data-value');
         console.log(val);
     });

@@ -932,6 +932,14 @@
     position: relative;
     width: 20px;
   }
+  .desktop-2 .radio-selected {
+    padding: 3px;
+    background-color: var(--blue) !important;
+    background-clip: content-box;
+  }
+  .desktop-2 .radio-label {
+    cursor: pointer;
+  }
   .desktop-2 .red-hair-C61RwL {
     background-color: transparent;
     height: 291px;
