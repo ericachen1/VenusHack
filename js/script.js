@@ -56,5 +56,7 @@ function startTimer() {
         } else {
             alert('Please selected an activity');
         }
+    } else {
+        alert('Please enter both the hours and minutes');
     }
 }
