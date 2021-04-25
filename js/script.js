@@ -1,7 +1,11 @@
 var selectedActivity = null;
 
 $(document).ready(function () {
-
+    // Start a dummy timer on page load
+    $('.flipTimer').flipTimer({
+        direction: 'down',
+        intervalTime: 0
+    });
     $('#time').focusout(() => {
         startTimer();
     });
