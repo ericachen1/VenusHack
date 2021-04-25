@@ -10,6 +10,13 @@ $(document).ready(function () {
             });
         }
     });
+
+    $('.radio-group .js-radio').click(function(){
+        $(this).parent().find('.js-radio').children('.radio-button-square').removeClass('border-1px-blue');
+        $(this).children('.radio-button-square').addClass('border-1px-blue');
+        var val = $(this).attr('data-value');
+        console.log(val);
+    });
 });
 
 function convertTimeToMilliseconds(time) {
