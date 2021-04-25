@@ -1,5 +1,6 @@
+var selectedActivity = null;
+
 $(document).ready(function () {
-    var selectedActivity = null;
 
     $('#time').focusout(() => {
         console.log(document.getElementById('time').value);
@@ -32,4 +33,10 @@ function convertTimeToMilliseconds(time) {
     var minutes = time.split(':')[1];
 
     return (hours * 60 * 60 * 1000) + (minutes * 60 * 1000);
+}
+
+function displayModal() {
+    console.log(selectedActivity);
+    $('#timer-alert--activity').text(selectedActivity);
+    $('#timer-alert').modal();
 }
