@@ -1,0 +1,47 @@
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --mist-gray: rgba(196, 196, 196, 1);
+  --white: rgba(255, 255, 255, 1);
+
+  --font-size-l: 36px;
+  --font-size-m: 24px;
+  --font-size-s: 20px;
+  --font-size-xl: 64px;
+  --font-size-xs: 18px;
+  --font-size-xxs: 16px;
+
+  --font-family-arial-bold: "Arial-Bold", Helvetica;
+  --font-family-arial-regular: "Arial-Regular", Helvetica;
+  --font-family-poppins: "Poppins", Helvetica;
+}
+.arial-regular-normal-black-16px {
+  color: var(--black);
+  font-family: var(--font-family-arial-regular);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 400;
+}
+.arial-bold-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-arial-bold);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 700;
+}
+.arial-bold-black-36px {
+  color: var(--black);
+  font-family: var(--font-family-arial-bold);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+.arial-regular-normal-black-24px {
+  color: var(--black);
+  font-family: var(--font-family-arial-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+.border-1px-black {
+  border: 1px solid var(--black);
+}
