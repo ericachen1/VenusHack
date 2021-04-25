@@ -9,6 +9,15 @@ $(document).ready(function () {
         if (timeInMilliseconds) {
             // Check if an activity was selected
             if(selectedActivity) {
+                // Reset the filpTimer by resetting the html
+                $('.timer-div').html('');
+                $('.timer-div').append(`
+                <div class="flipTimer">
+                    <div class="hours"></div>
+                    <div class="minutes"></div>
+                    <div class="seconds"></div>
+                </div>
+                `);
                 $('.flipTimer').flipTimer({
                     direction: 'down',
                     intervalTime: timeInMilliseconds,
