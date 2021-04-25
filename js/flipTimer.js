@@ -219,16 +219,12 @@
             }
   
             clearInterval(_this.timer);
-            console.log('donee');
-            displayModal();
             return;
           }
   
           // if timer runs out stop the timer
           if ((_this.days > 999) || (_this.days == 999 && _this.hours == 23 && _this.minutes == 59 && _this.seconds == 59)) {
             clearInterval(_this.timer);
-            console.log('done');
-            displayModal();
             return;
           }
   

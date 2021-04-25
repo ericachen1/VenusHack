@@ -11,7 +11,8 @@ $(document).ready(function () {
             if(selectedActivity) {
                 $('.flipTimer').flipTimer({
                     direction: 'down',
-                    intervalTime: timeInMilliseconds
+                    intervalTime: timeInMilliseconds,
+                    callback:function() { displayModal(); }
                 });
             } else {
                 alert('Please selected an activity');
