@@ -1,0 +1,38 @@
+body{
+    color:darkblue;
+    background-image: linear-gradient(to bottom right, #81FFEF,#F067B4);
+    min-height: 100vh;
+}
+  ul a {
+  color:darkblue;
+  }
+  
+  
+  h2{
+    color:darkblue;
+  }
+  
+  .title{
+  color: black;
+  }
+  
+  .name{
+    color:darkmagenta;
+    font-size: 15px;
+  }
+  
+  img.floatleft{
+    float:left;
+    margin:20px;
+  }
+  
+  img.floatright{
+    float:right;
+    margin:20px;
+  }
+  
+  #image{
+  text-align:bottom ;
+  font-size:13px;
+  }
+  
